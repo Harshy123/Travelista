@@ -1,0 +1,11 @@
+@import '../../styles/variables.scss';
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loading {
+  animation: rotate 2s linear infinite;
+}

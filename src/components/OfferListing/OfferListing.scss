@@ -1,0 +1,135 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.content {
+  margin: {
+    top: 15px;
+    bottom: 25px;
+  }
+}
+
+.sliderContainer {
+  position: relative;
+}
+
+.slide {
+  width: 100%;
+  height: $slider-height !important;
+  @include breakpoint(small only) {
+    height: $slider-height-small !important;
+  }
+}
+
+.logoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.logo {
+  background-color: $ht-white;
+  width: 135px;
+  height: 135px;
+  z-index: 1;
+  margin: {
+    top: 25px;
+  }
+  @include breakpoint(small only) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.preload {
+  background-color: $ht-gray;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloadIcon {
+  height: 225px;
+  width: 195px;
+}
+
+.hotelName {
+  font-size: 24px;
+  font-weight: 400;
+  letter-spacing: 1;
+  color: $ht-black;
+  margin: {
+    bottom: 1px;
+  }
+}
+
+.mapPin {
+  width: 13px;
+  height: 16px;
+}
+
+.location {
+  font-weight: 400;
+  font-size: 16px;
+  color: $ht-black;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  margin: {
+    bottom: 13px;
+  }
+
+  * {
+    vertical-align: middle;
+  }
+}
+
+.city {
+  margin-left: 9px;
+  text-transform: capitalize;
+}
+
+.country {
+  text-transform: uppercase;
+}
+
+.startingFrom {
+  font-size: 16px;
+  font-weight: 400;
+}
+
+.price {
+  font-size: 28px;
+  font-weight: 400;
+  color: $ht-black;
+  vertical-align: middle;
+}
+
+.priceWrapper {
+  padding-right: 18px;
+  text-align: right;
+  display: block;
+}
+
+.perNights {
+  vertical-align: middle;
+  margin-left: 5px;
+  white-space: pre;
+}
+
+.viewDetailsButton {
+  margin: auto;
+  margin-top: 18%;
+}
+
+.viewDetailsButtonContent {
+  letter-spacing: 0;
+  padding: 10px 20px;
+}
+
+.bold {
+  font-weight: 400;
+}

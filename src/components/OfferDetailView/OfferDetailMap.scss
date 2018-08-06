@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+// Map styles
+.map {
+  position: relative;
+  height: 550px;
+}
+
+$markerSize: 25px;
+.mapMarker {
+  position: absolute;
+  background-color: rgba(102, 174, 149, 0.5) !important;
+  border-radius: 100% !important;
+  border: 2px solid $ht-green !important;
+  border-radius: $markerSize / 2;
+  width: $markerSize;
+  height: $markerSize;
+  left: -$markerSize / 2;
+  top: -$markerSize / 2;
+}
+
+.mapAddress {
+  font-size: 14px;
+  margin: {
+    top: 20px;
+    bottom: 20px;
+  }
+  @include breakpoint(small only) {
+    text-align: center;
+  }
+}
+
+.markerIcon {
+  margin: {
+    right: 5px;
+  }
+}

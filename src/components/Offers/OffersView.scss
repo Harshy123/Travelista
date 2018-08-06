@@ -1,0 +1,70 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.offerHeader {
+  height: 120px;
+  width: 100%;
+  @include breakpoint(small only) {
+    height: 65px;
+  }
+}
+
+.offerHeaderWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include breakpoint(small only) {
+    justify-content: center;
+  }
+}
+
+.title {
+  color: $ht-black;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.offers {
+  margin: {
+    bottom: 40px;
+  }
+}
+
+.loadMoreButton {
+  margin: {
+    left: auto;
+    right: auto;
+    top: 70px;
+    bottom: 70px;
+  }
+}
+
+.loadMoreButtonContent {
+  padding: 15px 30px;
+}
+
+.emptyContainer {
+  font-size: 18px;
+  font-weight: 500;
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex: 1 0 auto;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.dropdownIcon {
+  width: 13px;
+  height: 6px;
+}

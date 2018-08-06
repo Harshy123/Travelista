@@ -1,0 +1,400 @@
+@import '../../styles/variables.scss';
+
+.startingFrom {
+  color: $ht-black;
+  text-align: left;
+  font-size: 14px;
+}
+
+.price {
+  margin: {
+    top: 10px;
+  }
+  color: $ht-black;
+  font-weight: 500;
+  text-align: left;
+  font-size: 24px;
+}
+
+.endIn {
+  text-align: right;
+  color: $ht-black;
+  font-size: 14px;
+  margin: {
+    top: 0;
+  }
+}
+
+.endInBold {
+  font-weight: 500;
+}
+
+.share {
+  text-align: right;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: {
+    top: 15px;
+  }
+}
+
+.iconContainer {
+  margin: {
+    right: 8px;
+  }
+}
+
+.iconClock {
+  width: 10px;
+  height: 10px;
+}
+
+.tabs {
+  font-size: 16px;
+  color: $ht-gray;
+}
+
+.tabList {
+  display: inline-block;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: {
+    bottom: none;
+  }
+}
+
+.tabSelected {
+  display: none;
+  font-weight: 400;
+  border: {
+    bottom: 2px solid $ht-green !important;
+  }
+}
+
+.tabPanelSelected {
+  display: block !important;
+}
+
+.tabPanel {
+  display: none;
+  margin: {
+    bottom: 30px;
+  }
+}
+
+.tab {
+  display: inline-block;
+  position: relative;
+  padding: {
+    top: 15px;
+    left: 35px;
+    right: 35px;
+    bottom: 15px;
+  }
+  cursor: pointer;
+}
+
+.tabPanelText {
+  line-height: 23px;
+  padding: {
+    top: 10px;
+    bottom: 10px;
+  }
+}
+
+.about {
+  font-size: 14px;
+  line-height: 23px;
+  color: $ht-black;
+  min-height: 120px;
+  margin: {
+    top: 20px;
+    bottom: 20px;
+  }
+}
+
+.smallTab {
+  font-size: 11px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  position: relative;
+  list-style: none;
+  cursor: pointer;
+  border: {
+    bottom: 2px solid $ht-light-gray;
+  }
+}
+
+.smallTabIcon {
+  width: 30px;
+  height: 30px;
+}
+
+.smallTabText {
+  margin: {
+    top: 8px;
+    bottom: 10px;
+  }
+}
+
+.smallTabSelected {
+  color: $ht-green;
+  border: {
+    bottom: 2px solid $ht-green;
+  }
+}
+
+.smallTabPanel {
+  display: none;
+  min-height: 300px;
+  font-size: 14px;
+  height: 100%;
+  background-color: $ht-ultra-light-gray;
+}
+
+.hideTab {
+  display: none !important;
+}
+
+.viewPackagesButton {
+  width: 100%;
+}
+
+.hotelFacilities {
+  font-size: 15px;
+  padding: {
+    top: 10px;
+    bottom: 10px;
+  }
+}
+
+.facilityIconContainer {
+  height: 36px;
+  width: 36px;
+}
+
+.facilityIcon {
+  height: 100%;
+}
+
+.facilityContainer {
+  display: flex;
+  align-items: center;
+  margin: {
+    bottom: 15px;
+  }
+}
+
+.facilityText {
+  margin: {
+    left: 15px;
+    right: 15px;
+  }
+  font-size: 12px;
+  font-weight: 500;
+  color: $ht-gray;
+}
+
+.facilities {
+  margin: {
+    bottom: 30px;
+  }
+}
+
+// packagesOverlay
+.packagesModal {
+  .packagesOverlay {
+    background-color: $ht-white;
+    width: 100%;
+    height: 100%;
+  }
+
+  .packagesHeader {
+    display: flex;
+    align-items: center;
+    height: 60px;
+  }
+
+  .packageBackButton {
+    width: 30px;
+    height: 30px;
+  }
+
+  .packageBackIcon {
+    width: 100%;
+    height: 100%;
+  }
+
+  .packagesTitle {
+    font-size: 18px;
+    font-weight: 500;
+    display: flex;
+    justify-content: center;
+  }
+
+  .tabs {
+    font-size: 16px;
+    color: $ht-gray;
+    height: 100%;
+  }
+
+  .tabContainer {
+    font-size: 11px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    position: relative;
+    list-style: none;
+    cursor: pointer;
+  }
+
+  .tab {
+    display: inline-block;
+    position: relative;
+    padding: {
+      top: 15px;
+      left: 15px;
+      right: 15px;
+      bottom: 15px;
+    }
+    cursor: pointer;
+  }
+
+  .tabList {
+    font-weight: 100;
+    width: 100%;
+    overflow-x: scroll;
+    white-space: nowrap;
+    justify-content: center;
+    display: flex;
+    -ms-overflow-style: none;
+    overflow: -moz-scrollbars-none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+
+  .tabSelected {
+    color: $ht-green;
+    border: {
+      bottom: 2px solid $ht-green;
+    }
+  }
+  .roomTabName {
+    font-size: 16px;
+  }
+
+  .roomTabPrice {
+    color: $ht-gray !important;
+    font-weight: 300 !important;
+  }
+
+  .tabPanel {
+    margin: 0;
+    height: 100%;
+    width: 100%;
+    background-color: $ht-ultra-light-gray;
+  }
+
+  .tabPanels {
+    background-color: $ht-ultra-light-gray;
+    width: 100%;
+    min-height: 100%;
+    display: flex;
+    padding: {
+      top: 15px;
+      left: 15px;
+      right: 15px;
+    }
+  }
+
+  .roomDescription {
+    font-size: 16px;
+    line-height: 23px;
+    color: $ht-gray;
+  }
+
+  .package {
+    width: 100%;
+    background-color: $ht-white;
+    margin: {
+      bottom: 15px;
+    }
+  }
+  $package-border: 1px solid $ht-gray;
+  .packageControl {
+    border: {
+      top: $package-border;
+      left: $package-border;
+      right: $package-border;
+    }
+    padding: 15px;
+  }
+
+  .packageImageContainer {
+    display: inline-block;
+    width: 95px;
+    height: 95px;
+  }
+
+  .packageImage {
+    width: 100%;
+    height: 100%;
+  }
+
+  .packageButton {
+    width: 100%;
+  }
+
+  .packageInfo {
+    display: inline-block;
+  }
+
+  .packageContent {
+    flex: 1 1 0%;
+    margin: {
+      left: 30px;
+    }
+  }
+
+  .packageTitle {
+    color: $ht-black;
+    text-transform: uppercase;
+    margin: {
+      bottom: 15px;
+    }
+  }
+
+  .packagePriceContainer {
+    display: inline-block;
+    &:first-child {
+      margin: {
+        right: 15px;
+      }
+    }
+  }
+
+  .packagePriceTitle {
+    font-size: 12px;
+    color: $ht-black;
+  }
+
+  .packagePrice {
+    color: $ht-black;
+    font-size: 14px;
+    font-weight: 500;
+  }
+
+  .packages {
+    display: flex;
+    margin: {
+      top: 30px;
+    }
+  }
+}

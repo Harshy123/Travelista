@@ -1,0 +1,17 @@
+[ignore]
+<PROJECT_ROOT>/node_modules/.*
+<PROJECT_ROOT>/build/.*
+
+[libs]
+flow-typed/libdefs.js
+
+[lints]
+
+[options]
+module.file_ext=.js
+module.file_ext=.css
+module.file_ext=.scss
+module.name_mapper.extension='scss' -> '<PROJECT_ROOT>/interfaces/CSSModule.js'
+module.name_mapper.extension='css' -> '<PROJECT_ROOT>/interfaces/CSSModule.js'
+
+[strict]

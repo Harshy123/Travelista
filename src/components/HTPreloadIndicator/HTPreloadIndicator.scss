@@ -1,0 +1,20 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.preload {
+  background-color: $ht-gray;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloadIcon {
+  height: 225px;
+  width: 195px;
+  @include breakpoint(small only) {
+    height: 115px;
+    width: 98px;
+  }
+}

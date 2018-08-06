@@ -1,0 +1,77 @@
+@import '../../styles/variables.scss';
+
+.tags {
+  border: {
+    bottom: {
+      style: solid;
+      width: 2px;
+      color: $ht-super-light-gray;
+    }
+  }
+  padding: 4px 0;
+  height: 34px;
+  overflow: auto;
+  white-space: nowrap;
+
+  -ms-overflow-style: none; // IE 10+
+  overflow: -moz-scrollbars-none; // Firefox
+}
+
+.tags::-webkit-scrollbar {
+  display: none; // Safari and Chrome
+}
+
+.tagInput {
+  display: inline-block;
+  width: 100%;
+  padding: {
+    top: 3px;
+  }
+}
+
+.tagInputField {
+  width: 100%;
+  font: {
+    family: $ht-font;
+    size: 16px;
+    weight: 100;
+  }
+  &::placeholder {
+    color: $ht-light-gray;
+    font-size: 16px;
+  }
+}
+
+.selected {
+}
+
+.tag {
+  background-color: $ht-ultra-light-gray;
+  color: $ht-black;
+  border-radius: 5px;
+  padding: 3px;
+  margin: 0 2px;
+  display: inline-block;
+}
+
+.withPaddingBottom {
+  padding: {
+    bottom: 17px;
+  }
+}
+
+.error {
+  font-size: 14px;
+  color: $ht-red;
+  font-weight: 700;
+}
+
+.pxove {
+  padding-left: 5px;
+}
+
+.suggestions {
+}
+
+.activeSuggestion {
+}

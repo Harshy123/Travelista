@@ -1,0 +1,176 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.footer {
+  width: 100%;
+  background-color: $ht-black;
+  padding: {
+    top: 20px;
+    bottom: 29px;
+  }
+}
+
+.footerWrapper {
+  background-color: $ht-black;
+  height: 100%;
+
+  @include breakpoint(small only) {
+    padding: 0;
+  }
+}
+
+.footerContent {
+  & a {
+    color: $ht-white;
+  }
+  margin: {
+    left: 30px;
+    right: 30px;
+    top: 0px;
+  }
+}
+
+.logo {
+  height: 50px;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.title {
+  color: $ht-white;
+  font-size: 16px;
+  font-weight: 500;
+  margin: {
+    top: 16px;
+    bottom: 13px;
+  }
+}
+
+.centerTitle {
+  text-align: center;
+}
+
+.contentCell {
+  @include breakpoint(small only) {
+    text-align: center;
+    padding: {
+      top: 40px;
+      bottom: 40px;
+    }
+    border-bottom: 1px solid $ht-gray;
+  }
+  li {
+    list-style-type: none;
+  }
+
+  ul {
+    padding: 0;
+  }
+}
+.logoCell {
+  border-left: 1px solid $ht-gray;
+  @include breakpoint(small only) {
+    text-align: center;
+    border: 0px;
+    padding: 0px;
+    padding-top: 40px;
+  }
+}
+.logosWithPadding {
+  @include breakpoint(medium up) {
+    padding-left: 76px;
+  }
+}
+.logosWithMargin {
+  margin: {
+    top: 15px;
+    bottom: 20px;
+    left: 5px;
+  }
+}
+.upperTravelLogos {
+  display: table;
+  margin: auto;
+  width: 97%;
+}
+
+.logoHATA {
+  height: 56px;
+  float: left;
+}
+
+.logoTIC {
+  height: 58px;
+  float: right;
+  margin-top: 3px;
+}
+
+.logoTAR {
+  width: 152px;
+}
+
+.travelLogos {
+  margin: auto;
+}
+
+.link {
+  width: 100%;
+  color: $ht-white;
+  font-size: 16px;
+  line-height: 26px;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+.icon {
+  display: inline-block;
+  padding-left: 36px;
+  background-position: center left;
+  background-repeat: no-repeat;
+}
+.iconInstagram {
+  background-image: url(../../images/ico-ig.svg);
+}
+.iconFacebook {
+  background-image: url(../../images/ico-fb.svg);
+}
+.iconYouTube {
+  background-image: url(../../images/ico-yt.svg);
+}
+.iconPinterest {
+  background-image: url(../../images/ico-pin.svg);
+}
+.iconGoogle {
+  background-image: url(../../images/ico-gp.svg);
+}
+.iconTwitter {
+  background-image: url(../../images/ico-twit.svg);
+}
+
+.privacy {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px 0;
+  border-top: 1px solid $ht-gray;
+  .links {
+    margin: {
+      bottom: 10px;
+    }
+    .link {
+      display: inline;
+      color: $ht-white;
+      font-size: 16px;
+      margin: {
+        left: 15px;
+        right: 15px;
+      }
+    }
+  }
+  .copyright {
+    white-space: pre;
+    color: $ht-gray;
+    font-size: 14px;
+  }
+  margin-top: 30px;
+}

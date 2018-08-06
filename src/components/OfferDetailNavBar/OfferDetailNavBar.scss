@@ -1,0 +1,25 @@
+@import '../../styles/variables.scss';
+
+.container {
+  width: $global-width;
+  height: 80px;
+  line-height: 80px;
+
+  margin: 0 auto;
+
+  position: relative;
+}
+
+.backButton {
+  display: inline-block;
+  margin-left: -7px;
+  padding: 7px;
+}
+
+.experienceDropDown {
+  line-height: 1;
+
+  position: absolute;
+  top: 22px;
+  right: 0;
+}

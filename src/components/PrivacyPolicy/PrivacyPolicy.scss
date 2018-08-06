@@ -1,0 +1,67 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.privacyPolicyHeader {
+  height: 120px;
+  width: 100%;
+  @include breakpoint(small only) {
+    height: 65px;
+    border-bottom: none;
+  }
+  border-bottom: 1px solid #cccccc;
+}
+
+.privacyPolicyHeaderWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: $ht-black;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include breakpoint(small only) {
+    padding: {
+      left: 10px;
+    }
+  }
+}
+
+.privacyPolicyArticle {
+  text-align: justify;
+  font-size: 16px;
+  color: $ht-black;
+  line-height: 23px;
+  padding: 50px 20px;
+  a {
+    color: $ht-light-green;
+  }
+  span {
+    display: inline-block;
+    width: 26px;
+    text-indent: 0;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  ul {
+    list-style: none;
+
+    li {
+      padding-left: 30px;
+      text-indent: -26px;
+    }
+  }
+  @include breakpoint(small only) {
+    padding: 20px 20px 40px 20px;
+
+    h3 {
+      text-align: left;
+    }
+  }
+}

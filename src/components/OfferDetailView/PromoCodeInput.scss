@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+
+.trailingNode {
+  display: flex;
+  align-items: center;
+}
+
+.trailingText {
+  font-size: 10px;
+  color: $ht-light-gray;
+  margin: {
+    left: 5px;
+  }
+}
+
+.validTextInput {
+  border-bottom: 2px solid $ht-green !important;
+}
+
+.invalidTextInput {
+  border-bottom: 2px solid $ht-red !important;
+}
+
+.textInput {
+  min-width: 200px;
+  display: inline-block;
+  margin-left: 9px;
+}
+
+.promoCodeInput {
+  padding: 0;
+}
+
+.label {
+  float: left;
+}

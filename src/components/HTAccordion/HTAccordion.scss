@@ -1,0 +1,40 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.label {
+  font-size: 16px;
+  color: $ht-black;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  letter-spacing: 3px;
+  width: 100%;
+
+  font-weight: 700;
+  margin: {
+    top: 25px;
+    bottom: 25px;
+  }
+}
+
+.opened {
+  display: block;
+}
+
+.closed {
+  display: none;
+}
+
+.icon {
+  width: 11px;
+  height: 5px;
+}
+
+.iconContainer {
+  display: flex;
+  align-items: center;
+  margin: {
+    left: 12px;
+  }
+}
+

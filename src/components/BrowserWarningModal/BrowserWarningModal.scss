@@ -1,0 +1,50 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.modal {
+  border-radius: 4px;
+  @include breakpoint(small only) {
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.modalWrapper {
+  position: relative;
+  height: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: white;
+
+  padding: 10px 25px;
+  @include breakpoint(small only) {
+    padding: 8px 8px;
+  }
+}
+
+.content {
+  word-wrap: break-word;
+  font-size: 16px;
+  color: $ht-gray;
+  margin: 25px 15px 10px 15px;
+  padding: 0 5px 5px 5px;
+  overflow-y: auto;
+  height: 55%;
+
+  @include breakpoint(small only) {
+    height: 85%;
+  }
+}
+
+.button {
+  margin: 25px auto 15px auto;
+  border-radius: 3px;
+}
+
+.buttonContent {
+  letter-spacing: 0;
+  padding: 5px 80px;
+}

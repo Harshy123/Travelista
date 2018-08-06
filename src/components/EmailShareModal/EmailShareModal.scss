@@ -1,0 +1,103 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.emailShareModal {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  right: auto;
+  bottom: auto;
+  overflow: auto;
+  border-radius: 4px;
+  outline: none;
+  opacity: 1;
+  transform: translate(-50%, -50%);
+  width: 730px;
+  height: 560px;
+  @include breakpoint(small only) {
+    min-width: 0;
+    width: 100%;
+    height: 100%;
+  }
+}
+
+.emailShareModalWrapper {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+  background-color: white;
+
+  padding: {
+    left: 40px;
+    right: 40px;
+    top: 20px;
+    bottom: 20px;
+  }
+  @include breakpoint(small only) {
+    padding: 8px 8px;
+  }
+}
+
+.modalHeader {
+  position: relative;
+  flex-direction: column;
+  text-align: center;
+  height: 25px;
+}
+
+.title {
+  letter-spacing: 1px;
+  font-size: 24px;
+  position: relative;
+  top: 10px;
+}
+
+.content {
+  font-size: 16px;
+  color: $ht-gray;
+  padding: 52px 100px;
+
+  @include breakpoint(small only) {
+    padding: 60px 20px;
+  }
+}
+
+.closeIconContainer {
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+
+.closeIcon {
+  width: 25px;
+  height: 25px;
+}
+
+.messageArea {
+  resize: none;
+  width: 100%;
+  font-family: $ht-font;
+  font-weight: 300;
+  font-size: 16px;
+  border: 1px solid $ht-super-light-gray;
+  height: 175px;
+  padding: 10px;
+  margin: {
+    top: 13px;
+    bottom: 56px;
+  }
+  &::placeholder {
+    color: $ht-light-gray;
+    font-family: $ht-font;
+    font-size: 16px;
+  }
+}
+
+.button {
+  width: 297px;
+  margin: 5px auto;
+}

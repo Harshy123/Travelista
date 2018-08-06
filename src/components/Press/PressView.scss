@@ -1,0 +1,67 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.pressHeader {
+  height: 120px;
+  width: 100%;
+  border-bottom: 1px solid $ht-super-light-gray;
+  @include breakpoint(small only) {
+    height: 65px;
+  }
+}
+
+.pressHeaderWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: $ht-black;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.subtitle {
+  color: $ht-black;
+  font-size: 24px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  text-transform: uppercase;
+  margin-top: 20px;
+}
+
+.pressContent {
+  margin-top: 30px;
+  margin-bottom: 90px;
+}
+
+.press {
+  border-bottom: 1px solid $ht-super-light-gray;
+  padding: 24px 0;
+}
+.pressTitle a {
+  color: $ht-black;
+  font-weight: 500;
+  font-size: 20px;
+}
+.pressPublishedAt {
+  color: $ht-light-gray;
+  font-size: 16px;
+  font-weight: 500;
+}
+.loadMoreButton,
+.loadingIndicator {
+  margin: 30px auto 0 auto;
+}
+
+.loadingIndicator {
+  display: flex;
+  justify-content: center;
+}
+.empty {
+  margin: 24px;
+}

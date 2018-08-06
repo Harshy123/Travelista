@@ -1,0 +1,557 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.accountHeader {
+  height: 120px;
+  width: 100%;
+  border-bottom: 1px solid #cccccc;
+  @include breakpoint(small only) {
+    height: 65px;
+    border-bottom: none;
+  }
+}
+
+.accountHeaderWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: $ht-black;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  @include breakpoint(medium up) {
+    text-transform: uppercase;
+  }
+  @include breakpoint(small only) {
+    padding: {
+      left: 10px;
+    }
+  }
+}
+
+.logout {
+  color: $ht-light-gray;
+  padding-left: 20px;
+}
+
+.logoutBtn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  color: $ht-gray;
+  width: 108px;
+  font-size: 14px;
+  letter-spacing: 3px;
+}
+
+.account {
+  display: flex;
+  justify-content: space-between;
+  padding: 45px 15px;
+  @include breakpoint(small only) {
+    flex-direction: column;
+    padding: 0;
+  }
+}
+
+.accountInfo {
+  flex: 1;
+  display: flex;
+  @include breakpoint(small only) {
+    flex-direction: column;
+    padding: 0 20px;
+  }
+}
+
+.accountActions {
+  button {
+    width: 270px;
+    margin-bottom: 10px;
+    letter-spacing: 1px;
+  }
+}
+
+.accountActionsMobile {
+  font-size: 16px;
+  letter-spacing: 1px;
+  ul {
+    list-style: none;
+
+    li {
+      line-height: 60px;
+      border-top: 1px solid rgba(151, 151, 151, 0.3);
+
+      a {
+        background: url(../../images/ic_account_mobile_menu_item.svg) right 20px
+          center no-repeat;
+        color: $ht-black;
+        display: block;
+        padding: {
+          left: 20px;
+        }
+      }
+
+      a.gray {
+        background: $ht-ultra-light-gray;
+        color: $ht-light-gray;
+      }
+    }
+  }
+}
+
+.profile {
+  font-size: 16px;
+  width: 375px;
+  @include breakpoint(small only) {
+    width: auto;
+    padding: 20px 0;
+  }
+}
+
+.profilePictureWrapper {
+  display: flex;
+  flex-direction: column;
+  width: 108px;
+  margin-right: 55px;
+  @include breakpoint(small only) {
+    margin: {
+      top: 10px;
+      left: 0;
+      right: 0;
+      bottom: 10px;
+    }
+    align-self: center;
+  }
+}
+
+.profilePicture {
+  display: inline-flex;
+  width: 108px;
+  height: 108px;
+  background: $ht-ultra-light-gray;
+  border: 1px solid #dbdbdb;
+  border-radius: 100%;
+  overflow: hidden;
+  justify-content: center;
+
+  img {
+    max-height: 108px;
+  }
+
+  span {
+    font-size: 56px;
+    color: $ht-black;
+    letter-spacing: 0;
+    font-weight: 400;
+    align-self: center;
+  }
+}
+
+.processing {
+  opacity: 0.5;
+}
+
+.changeProfilePicture {
+  font-size: 16px;
+  text-align: center;
+  margin-top: 10px;
+  color: $ht-light-green;
+}
+
+.changeProfilePicture > label {
+  cursor: pointer;
+}
+
+.fileUpload {
+  display: none;
+}
+
+.profileRow {
+  display: flex;
+  justify-content: space-between;
+  padding: 5px 0;
+}
+
+.profileValue {
+  font-weight: 400;
+  text-align: right;
+}
+
+.formControl {
+  width: 100%;
+  margin: {
+    bottom: 30px;
+  }
+  & > div:nth-child(odd) {
+    padding: {
+      right: 8px;
+    }
+    @include breakpoint(small only) {
+      padding: {
+        right: 0px;
+      }
+    }
+  }
+  & > div:nth-child(even) {
+    padding: {
+      left: 8px;
+    }
+    @include breakpoint(small only) {
+      margin: {
+        top: 30px;
+      }
+      padding: {
+        left: 0px;
+      }
+    }
+  }
+}
+
+.buttonGroup {
+  display: flex;
+  justify-content: space-between;
+}
+
+.button {
+  width: 300px;
+  @include breakpoint(small only) {
+    width: 100%;
+  }
+}
+
+.accountForm {
+  flex: 1;
+  @include breakpoint(small only) {
+    padding: 20px;
+  }
+}
+
+$accountBorder: 1px solid $ht-light-gray;
+
+.accountTabs {
+  margin: {
+    bottom: 50px;
+  }
+}
+
+.accountTab {
+  display: inline-block;
+  position: relative;
+  bottom: -1px;
+}
+
+.accountPanels {
+  border: {
+    left: $accountBorder;
+    right: $accountBorder;
+    bottom: $accountBorder;
+  }
+}
+
+.accountTabContainer {
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  padding: {
+    top: 15px;
+    bottom: 15px;
+    left: 25px;
+    right: 25px;
+  }
+}
+
+.accountTabList {
+  border: {
+    bottom: $accountBorder;
+  }
+}
+
+.accountTabSelected {
+  background-color: white;
+  .accountTabName {
+    color: $ht-green;
+    font-weight: 400;
+  }
+
+  border: {
+    top: $accountBorder;
+    left: $accountBorder;
+    right: $accountBorder;
+    bottom: none;
+  }
+}
+
+.accountTabName {
+  color: $ht-gray;
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.accountPanel {
+  display: none;
+  padding: {
+    top: 25px;
+    left: 15px;
+    right: 15px;
+    bottom: 25px;
+  }
+}
+
+.accountPanelSelected {
+  display: block;
+}
+
+.myTripsContainer {
+  font-size: 16px;
+}
+.loadingTrips,
+.noTrips {
+  text-align: center;
+  padding: 100px 0;
+  border: $accountBorder;
+}
+
+.myTrip {
+  border: $accountBorder;
+  display: flex;
+  flex-direction: row;
+}
+
+.myTrip:not(:first-child) {
+  margin: {
+    top: 20px;
+  }
+}
+
+.myTripImage {
+  display: inline-flex;
+  flex: 0 0 245px;
+  width: 245px;
+  height: 245px;
+  overflow: hidden;
+  justify-content: center;
+
+  img {
+    max-height: 245px;
+  }
+}
+
+.myTripDetail {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 1;
+  padding: 20px;
+}
+
+.myTripHeading {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.myTripTitle {
+  padding: 0;
+  margin: 0;
+  font-size: 26px;
+  letter-spacing: 4px;
+  text-transform: uppercase;
+}
+
+.myTripDate {
+  font-size: 18px;
+  color: $ht-gray;
+  letter-spacing: 1px;
+}
+
+.myTripPlace {
+  font-size: 16px;
+  text-transform: uppercase;
+  color: $ht-dark-gray;
+}
+
+.myTripBookingRef {
+  font-size: 16px;
+  color: $ht-black;
+}
+
+.myTripActions {
+  display: flex;
+  align-items: flex-end;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.myTripShareTitle {
+  font-size: 12px;
+  color: $ht-gray;
+  letter-spacing: 3px;
+}
+
+.socialMedia {
+  margin-top: 10px;
+}
+
+.socialMediaIcon {
+  width: 40px;
+  height: 40px;
+  margin: {
+    right: 10px;
+  }
+}
+
+.myTripActionButton {
+  width: 220px;
+  letter-spacing: 1px;
+}
+
+.specialRequestContainer {
+  font-size: 16px;
+}
+
+.specialRequestInput {
+  font-family: $ht-font;
+  border: $accountBorder;
+  font-size: 16px;
+  width: 100%;
+  height: 185px;
+  resize: none;
+  margin: {
+    bottom: 20px;
+  }
+  padding: 10px;
+}
+
+.specialRequestButtonGroup {
+  display: flex;
+  justify-content: center;
+}
+
+.specialRequestButtonGroup > button {
+  margin: 0 10px;
+}
+
+.myCardWrapper {
+  display: flex;
+  flex-direction: column;
+  font-size: 16px;
+}
+
+.myCardContainer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  border: $accountBorder;
+  padding: 20px;
+  margin: {
+    bottom: 20px;
+  }
+}
+
+.noCard {
+  text-align: center;
+  padding: 50px 0;
+}
+
+.creditCard {
+  display: flex;
+  flex-direction: row;
+  width: 300px;
+}
+
+.creditCardLogo {
+  flex: 0 0 70px;
+  width: 70px;
+
+  img {
+    max-width: 50px;
+    max-height: 50px;
+  }
+}
+
+.creditCardInfo {
+  flex: 1;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  line-height: 26px;
+}
+
+.creditCardLastDigit::before {
+  content: '\00B7\00B7\00B7\00B7\00A0\00B7\00B7\00B7\00B7\00A0\00B7\00B7\00B7\00B7\00A0';
+  font-size: 24px;
+  height: 20px;
+  line-height: 10px;
+  letter-spacing: 2px;
+}
+
+.cardButton {
+  align-self: center;
+  width: 260px;
+  float: right;
+}
+
+.isDisabled {
+  opacity: 0.5;
+}
+
+.hintAndButton {
+  display: inline-block;
+}
+
+.hint {
+  display: inline-block;
+  width: 50%;
+}
+
+.countryCode {
+  padding-right: 8px;
+}
+
+.mobileNumber {
+  @include breakpoint(medium up) {
+    position: relative;
+    top: 3px;
+  }
+}
+
+.pxoveCardModal {
+  padding: 20px;
+  background-color: white;
+  display: inline-block;
+  border-radius: 5px;
+
+  .button {
+    margin-bottom: 10px;
+  }
+}
+
+.pxoveCardModalContent {
+  text-align: center;
+  padding: {
+    top: 25px;
+    bottom: 30px;
+  }
+}
+
+.removeCardModal {
+  padding: 40px 50px 30px 50px;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.removeCardModalContent {
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 18px;
+}
+
+.removeCardButton {
+  width: 200px;
+  margin: auto;
+}

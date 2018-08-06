@@ -1,0 +1,75 @@
+language: node_js
+sudo: false
+node_js:
+  - "9"
+
+cache:
+  yarn: true
+  directories:
+    - node_modules
+
+before_install:
+  - node -v
+  - yarn -v
+
+install:
+  - yarn install
+
+script:
+  - yarn run flow
+  - yarn run lint
+  - yarn run prettier-check
+
+before_deploy:
+  - if [ $TRAVIS_BRANCH == "master" ] && [ $TRAVIS_PULL_REQUEST == false ]; then yarn run build-dev; fi
+  - if [ $TRAVIS_BRANCH == "staging" ] && [ $TRAVIS_PULL_REQUEST == false ]; then yarn run build-staging; fi
+  - if [ $TRAVIS_BRANCH == "production" ] && [ $TRAVIS_PULL_REQUEST == false ]; then yarn run build; fi
+
+deploy:
+  - provider: s3
+    bucket: heytravelista.pandawork.com
+    region: ap-southeast-1
+    skip_cleanup: true
+    access_key_id: "$DEV_AWS_ACCESS_KEY_ID"
+    secret_access_key: "$DEV_AWS_SECRET_ACCESS_KEY"
+    on:
+      repo: oursky/heytravelista
+      branch: staging
+      node_js: 9
+    local_dir: build
+    acl: public_read
+    cache_control: "max-age=604800"
+  - provider: s3
+    bucket: heytravelista-dev.pandawork.com
+    region: ap-southeast-1
+    skip_cleanup: true
+    access_key_id: "$DEV_AWS_ACCESS_KEY_ID"
+    secret_access_key: "$DEV_AWS_SECRET_ACCESS_KEY"
+    on:
+      repo: oursky/heytravelista
+      branch: master
+      node_js: 9
+    local_dir: build
+    acl: public_read
+    cache_control: "max-age=604800"
+  - provider: s3
+    bucket: heytravelista.com
+    region: ap-southeast-1
+    skip_cleanup: true
+    access_key_id: "$AWS_ACCESS_KEY_ID"
+    secret_access_key: "$AWS_SECRET_ACCESS_KEY"
+    on:
+      repo: oursky/heytravelista
+      branch: production
+      node_js: 9
+    local_dir: build
+    acl: public_read
+    cache_control: "max-age=604800"
+
+after_deploy:
+  - if [ $TRAVIS_BRANCH == "master" ] && [ $TRAVIS_PULL_REQUEST == false ]; then AWS_ACCESS_KEY_ID="$DEV_AWS_ACCESS_KEY_ID" AWS_SECRET_ACCESS_KEY="$DEV_AWS_SECRET_ACCESS_KEY" DISTRIBUTION_ID="$DEV_DISTRIBUTION_ID" yarn run invalidate-cf; fi
+  - if [ $TRAVIS_BRANCH == "staging" ] && [ $TRAVIS_PULL_REQUEST == false ]; then AWS_ACCESS_KEY_ID="$DEV_AWS_ACCESS_KEY_ID" AWS_SECRET_ACCESS_KEY="$DEV_AWS_SECRET_ACCESS_KEY" DISTRIBUTION_ID="$STAGING_DISTRIBUTION_ID" yarn run invalidate-cf; fi
+  - if [ $TRAVIS_BRANCH == "production" ] && [ $TRAVIS_PULL_REQUEST == false ]; then yarn run invalidate-cf; fi
+
+notifications:
+  slack: oursky:oU458mNz3Gw3d0jTXtgw6w4h

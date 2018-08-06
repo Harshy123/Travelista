@@ -1,0 +1,105 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.navWrapper {
+  background-color: $ht-brown;
+}
+
+.nav {
+  display: table;
+  width: $global-width;
+  margin: auto;
+  height: 80px;
+  padding: {
+    top: 10px;
+    bottom: 10px;
+  }
+}
+
+.transparentNav {
+  background-color: $ht-transparent;
+
+  .logo {
+    @include breakpoint(medium up) {
+      width: 325px;
+      height: 60px;
+    }
+  }
+}
+
+.logo {
+  width: 250px;
+  height: 45px;
+
+  @include breakpoint(small only) {
+    width: 215px;
+    height: 40px;
+  }
+}
+
+.link {
+  cursor: pointer;
+  padding: 0 5px;
+}
+
+.topBarContainer {
+  background: $ht-transparent;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  padding: {
+    left: 20px;
+    right: 20px;
+  }
+  max-width: 1200px;
+}
+
+.navBarContainer {
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.navBarGrid {
+  justify-content: center;
+}
+
+.newUserGuideLinks {
+  font-size: 16px;
+  color: $ht-white;
+}
+
+.newUserGuideLinks a {
+  color: $ht-white;
+}
+
+.sideMenuIconWrapper {
+  display: flex;
+  flex-direction: column;
+  align-self: center;
+  align-items: flex-end;
+}
+
+.sideMenuIcon {
+  width: 22px;
+  height: 23px;
+  align-self: flex-end;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.left {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}

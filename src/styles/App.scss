@@ -1,0 +1,14 @@
+@import './variables.scss';
+
+.wrapperStyle {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.contentStyle {
+  display: flex;
+  flex: 1 0 auto;
+  flex-direction: column;
+  justify-content: flex-start;
+};

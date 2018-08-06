@@ -1,0 +1,247 @@
+@import '../../styles/variables.scss';
+
+.alignCenter {
+  justify-content: center;
+}
+
+.bookingConfirmedContainer {
+  margin: {
+    top: 20px;
+    bottom: 30px;
+  }
+  text-align: center;
+}
+
+.bookingWrapper {
+  text-align: center;
+}
+
+.bookingConfirmedTitle {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin: {
+    top: 30px;
+    bottom: 10px;
+  }
+}
+
+.bookingDetailContainer {
+  font-size: 16px;
+  margin: {
+    bottom: 50px;
+  }
+}
+
+.bookingDetailTitle {
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin: {
+    bottom: 10px;
+  }
+}
+
+.summaryContainer {
+  color: $ht-gray;
+  box-shadow: 0px 10px 20px 0px rgba(0, 0, 0, 0.1);
+  border: 1px solid $ht-gray;
+  margin: {
+    right: 20px;
+    bottom: 40px;
+  }
+  padding: 20px;
+
+  a {
+    color: $ht-green;
+  }
+}
+
+.generalInfo {
+  width: 100%;
+}
+
+.firstRow {
+  td {
+    padding-top: 25px;
+  }
+}
+
+.infoDetail {
+  text-align: right;
+}
+
+.summaryTitle {
+  color: $ht-black;
+  font-weight: 500;
+  letter-spacing: 3px;
+  box-shadow: {
+  }
+  margin: {
+    top: 10px;
+    bottom: 10px;
+  }
+}
+
+.summarySection {
+}
+
+.packagePrice {
+  display: inline-block;
+  font-weight: 200;
+  color: $ht-green;
+  font-size: 24px;
+  letter-spacing: 1px;
+}
+
+.specialRequestTitle {
+  margin-top: 10px;
+}
+
+.spec .packageDetail {
+  line-height: 25px;
+}
+
+.guestContent {
+  margin: {
+    bottom: 5px;
+  }
+  padding: {
+    right: 10px;
+  }
+  word-wrap: break-word;
+}
+
+.flightContainer {
+  &:first-child {
+    margin: {
+      bottom: 5px;
+    }
+  }
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 500;
+  color: $ht-black;
+  letter-spacing: 1px;
+}
+
+.taxInclusive {
+  font-size: 14px;
+}
+
+.socialMedias {
+  margin-top: 10px;
+
+  img {
+    height: 20px;
+    margin-right: 5px;
+  }
+}
+
+.detailsFooter {
+  margin-top: 50px;
+}
+
+.footerLogos {
+  margin-top: 8px;
+
+  img {
+    height: 50px;
+    margin-right: 50px;
+  }
+}
+
+.utilityLoadingIndicatior {
+  margin: {
+    left: 10px;
+  }
+}
+
+.buttons {
+  margin: {
+    top: 29px;
+  }
+}
+
+.buttonContainer {
+  margin: {
+    bottom: 20px;
+  }
+}
+
+.button {
+  width: 100%;
+}
+
+.buttonContent {
+  font-size: 18px;
+  letter-spacing: 1px;
+  padding: {
+    top: 13px;
+    bottom: 13px;
+  }
+}
+
+.emailHint {
+  font-size: 16px;
+  margin: {
+    top: 40px;
+    bottom: 20px;
+  }
+  color: white;
+}
+
+.emailHintContent {
+  border-radius: 100px;
+  padding: 20px 30px;
+  background-color: $ht-green;
+}
+
+.nextStepContainer {
+  display: flex;
+  justify-content: center;
+  margin: {
+    bottom: 70px;
+  }
+}
+
+.nextStepButtonContent {
+  padding: {
+    top: 15px;
+    bottom: 15px;
+    left: 125px;
+    right: 125px;
+  }
+}
+
+.policySection {
+  border: {
+    top: 1px solid $ht-black;
+    bottom: 1px solid $ht-black;
+  }
+}
+
+.policyTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin: {
+    top: 20px;
+    bottom: 20px;
+  }
+}
+
+.policyContent {
+  font-size: 12px;
+  line-height: 18px;
+  margin: {
+    bottom: 20px;
+  }
+}
+
+.mainContent {
+  margin: {
+    bottom: 140px;
+  }
+}

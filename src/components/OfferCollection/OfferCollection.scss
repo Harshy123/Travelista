@@ -1,0 +1,120 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.container {
+  &:nth-child(odd) {
+    padding: {
+      right: 20px;
+    }
+  }
+  &:nth-child(even) {
+    padding: {
+      left: 20px;
+    }
+  }
+}
+
+.content {
+  margin: {
+    top: 10px;
+    bottom: 20px;
+  }
+}
+
+.imageContainer {
+  background-color: $ht-light-gray;
+  position: relative;
+  height: 290px;
+}
+.hotelImage {
+  width: 100%;
+  height: 100%;
+}
+
+.logoContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  pointer-events: none;
+}
+
+.logo {
+  background-color: $ht-white;
+  width: 135px;
+  height: 135px;
+  z-index: 1;
+  margin: {
+    top: 25px;
+  }
+  @include breakpoint(small only) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.preload {
+  background-color: $ht-gray;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.preloadIcon {
+  height: 225px;
+  width: 195px;
+}
+
+.hotelName {
+  font-size: 24px;
+  font-weight: 500;
+  letter-spacing: 4;
+  color: $ht-black;
+  margin: {
+    bottom: 5px;
+  }
+}
+
+.location {
+  font-size: 13px;
+  color: $ht-gray;
+  margin: {
+    bottom: 5px;
+  }
+}
+
+.price {
+  font-size: 16px;
+  color: $ht-gray;
+}
+
+.timeWrapper {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  text-align: right;
+}
+
+.time {
+  display: inline-flex;
+}
+
+.days {
+  font-weight: 700;
+}
+
+.clockIcon {
+  width: 20px;
+  height: 20px;
+  margin: {
+    right: 10px;
+  }
+}
+
+.timeDetail {
+  font-size: 18px;
+  color: $ht-black;
+}

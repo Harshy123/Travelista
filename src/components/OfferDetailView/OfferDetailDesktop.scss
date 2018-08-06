@@ -1,0 +1,443 @@
+@import '../../styles/variables.scss';
+
+.iconContainer {
+  vertical-align: middle;
+  margin: {
+    right: 10px;
+  }
+}
+
+.iconClock {
+  width: 20px;
+  height: 20px;
+}
+
+.endIn {
+  text-align: right;
+  font-size: 20px;
+  color: $ht-black;
+}
+
+.endInBold {
+  font-weight: 500;
+}
+
+.share {
+  text-align: right;
+  font-size: 12px;
+  letter-spacing: 3px;
+  margin: {
+    top: 15px;
+  }
+}
+
+.share:hover {
+  cursor: pointer;
+}
+
+.startingFrom {
+  text-align: right;
+  font-size: 20px;
+  color: $ht-black;
+}
+
+.perStay {
+  font-size: 22px;
+  color: $ht-black;
+  text-align: right;
+  font-weight: 400;
+}
+
+.pricePerNights {
+  text-align: right;
+}
+
+.price {
+  font-size: 46px;
+  line-height: 45px;
+  color: $ht-black;
+  font-weight: 500;
+}
+
+.perNights {
+  font-size: 20px;
+}
+
+.taxInclusive {
+  font-size: 16px;
+  line-height: 25px;
+  font-weight: 400;
+}
+
+.tabs {
+  font-size: 16px;
+  color: $ht-black;
+}
+
+.tabList {
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  border: {
+    bottom: none;
+  }
+}
+
+.tabSelected {
+  display: none;
+  font-weight: 400;
+  border: {
+    bottom: 2px solid $ht-green !important;
+  }
+}
+
+.tabPanelSelected {
+  display: block !important;
+}
+
+.tabPanel {
+  display: none;
+  margin: {
+    bottom: 30px;
+  }
+}
+
+.tab {
+  display: inline-block;
+  position: relative;
+  padding: {
+    top: 15px;
+    left: 35px;
+    right: 35px;
+    bottom: 15px;
+  }
+  cursor: pointer;
+}
+
+.tabPanelText {
+  line-height: 23px;
+  padding: {
+    top: 30px;
+    bottom: 30px;
+  }
+}
+
+.offerSectionTitle {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: {
+    top: 35px;
+    bottom: 35px;
+  }
+}
+
+.hotelSection {
+  margin: {
+    bottom: -20px;
+  }
+}
+
+.facility {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: {
+    bottom: 20px;
+  }
+}
+
+.facilityText {
+  font-size: 12px;
+  font-weight: 500;
+  color: $ht-gray;
+  width: 50%;
+}
+
+.facilityImageContainer {
+  width: 50%;
+
+  img {
+    display: table-cell;
+    margin: auto;
+  }
+}
+
+$roomBorder: 1px solid $ht-light-gray;
+// RoomTabs
+.roomTabs {
+  margin: {
+    bottom: 50px;
+  }
+}
+
+.roomTab {
+  display: table-cell;
+  vertical-align: middle;
+  position: relative;
+  bottom: -1px;
+  width: 19%;
+}
+
+.roomPanels {
+  border: $roomBorder;
+}
+
+.roomTabContainer {
+  text-align: center;
+  align-items: center;
+  cursor: pointer;
+  padding: {
+    top: 15px;
+    bottom: 15px;
+    left: 25px;
+    right: 25px;
+  }
+}
+
+.roomTabList {
+  padding: 0 !important;
+  display: table;
+  width: 90%;
+  position: relative;
+  top: 1px;
+}
+
+.roomTabSelected {
+  font-weight: 400;
+  background-color: white;
+  .roomTabName {
+    color: $ht-green;
+  }
+
+  border: {
+    top: $roomBorder;
+    left: $roomBorder;
+    right: $roomBorder;
+    bottom: none;
+  }
+}
+
+.roomTabName {
+  font-size: 16px;
+  letter-spacing: 2px;
+}
+
+.roomTabPrice {
+  font-size: 12px;
+  color: $ht-gray;
+}
+
+.roomPanel {
+  display: none;
+  padding: {
+    top: 25px;
+    left: 15px;
+    right: 15px;
+    bottom: 25px;
+  }
+}
+
+.roomPanelSelected {
+  display: block;
+}
+
+.roomDescription {
+  font-size: 16px;
+  line-height: 23px;
+  color: $ht-gray;
+}
+
+.packages {
+}
+
+.packageWrapper {
+}
+
+.package {
+  display: flex;
+  flex-direction: column;
+  margin: {
+    top: 30px;
+  }
+  &:nth-child(odd) {
+    padding: {
+      right: 20px;
+    }
+  }
+
+  &:nth-child(even) {
+    padding: {
+      left: 20px;
+    }
+  }
+}
+
+.packageControl {
+  margin: {
+    top: 30px;
+  }
+  padding: {
+    bottom: 16px;
+  }
+}
+.packageImageContainer {
+  background-color: $ht-light-gray;
+  height: 290px;
+  width: 100%;
+  cursor: pointer;
+}
+.packageImage {
+  width: 100%;
+  height: 100%;
+}
+
+.packageInfo {
+  display: flex;
+  flex-direction: column;
+}
+
+.packageName {
+  font-size: 18px;
+  color: $ht-black;
+  font-weight: 500;
+  margin: {
+    bottom: 20px;
+  }
+  text-transform: uppercase;
+}
+
+.packagePriceContainer {
+  display: inline-block;
+  &:first-child {
+    margin: {
+      right: 30px;
+    }
+  }
+}
+
+.packagePriceTitle {
+  font-size: 14px;
+  color: $ht-black;
+}
+
+.packagePrice {
+  font-size: 18px;
+  color: $ht-black;
+  font-weight: 500;
+}
+
+.packageButton {
+  width: 100%;
+}
+
+.packageButtonContent {
+  font-size: 16px;
+  letter-spacing: 0;
+  padding: {
+    left: 10px;
+    right: 10px;
+  }
+}
+
+.tabPanelText {
+  line-height: 23px;
+  padding: {
+    top: 30px;
+    bottom: 30px;
+  }
+}
+
+.packageAddOnsWrapper {
+  border: {
+    top: {
+      color: $ht-super-light-gray;
+      style: solid;
+      width: 1px;
+    }
+  }
+}
+
+.packageAddOnsContainer {
+  margin: {
+    bottom: 15px;
+  }
+}
+
+.packageInclusion {
+  font-weight: 400;
+  margin: {
+    top: 16px;
+  }
+}
+
+.packageAddOnWrapper {
+  margin: {
+    top: 16px;
+  }
+  width: 20%;
+  display: flex;
+  text-align: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.addOnText {
+  width: 100%;
+  font-size: 13px;
+  color: $ht-black;
+  font-weight: 500;
+  margin: {
+    top: 3px;
+  }
+}
+
+.roomTypeAddOnsContainer {
+  margin: {
+    top: 27px;
+    bottom: 5px;
+  }
+}
+
+.roomFacilities {
+  letter-spacing: 1px;
+  font-weight: 400;
+  text-align: center;
+}
+
+.roomTypeAddOnWrapper {
+  display: inline-block;
+  align-items: center;
+  width: 15%;
+  margin: {
+    top: 10px;
+    bottom: 10px;
+    right: 5%;
+  }
+}
+
+.roomTypeAddOnContent {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.roomTypeAddOnImageContainer {
+  width: 40%;
+  img {
+    display: table-cell;
+    margin: auto;
+  }
+}
+
+.roomTypeAddOnText {
+  width: 60%;
+  font-size: 14px;
+  color: $ht-black;
+  margin-left: 5px;
+}
+
+.hotelFacilityIconContainer {
+  display: inline-block;
+}

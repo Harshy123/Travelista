@@ -1,0 +1,103 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+$slider-height: 460px;
+$slider-height-small: 200px;
+
+.sliderContainer {
+  height: $slider-height;
+  position: relative;
+  @include breakpoint(small only) {
+    height: $slider-height-small;
+  }
+}
+
+.slideContainer {
+  position: relative;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: calc(100vw * 9 / 16);
+  max-height: 600px;
+}
+.backgroundImage {
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+
+  background: linear-gradient(
+    to right,
+    rgba(40, 40, 40, 0.4),
+    rgba(0, 0, 0, 0.1),
+    rgba(40, 40, 40, 0.4)
+  );
+}
+
+.name {
+  font-size: 24px;
+  font-weight: 600;
+  color: $ht-black;
+  text-align: center;
+  margin: {
+    top: 42px;
+    bottom: 42px;
+  }
+}
+
+.description {
+  color: $ht-black;
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+  margin: {
+    bottom: 25px;
+  }
+}
+
+.navWrapper {
+  position: absolute;
+  z-index: 1;
+  width: 85px;
+  height: 85px;
+  background-color: $ht-black;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  cursor: pointer;
+  @include breakpoint(small only) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.navPrev {
+  left: 0;
+}
+
+.navNext {
+  right: 0;
+}
+
+.navIcon {
+  width: 13px;
+  height: 32px;
+  @include breakpoint(small only) {
+    width: 6px;
+    height: 13px;
+  }
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+}

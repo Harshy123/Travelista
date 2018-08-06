@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="40px" height="40px" viewBox="0 0 40 40" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 49.1 (51147) - http://www.bohemiancoding.com/sketch -->
+    <title>btn-submit-small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="design" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="102_HT---Signup" transform="translate(-905.000000, -544.000000)">
+            <g id="Group-25">
+                <g id="Group-3" transform="translate(452.000000, 246.000000)">
+                    <g id="btn-submit-small" transform="translate(453.000000, 298.000000)">
+                        <g id="Group-8">
+                            <circle id="Oval-10" fill="#6BAE95" cx="20" cy="20" r="20"></circle>
+                            <g id="Group-3" transform="translate(11.707317, 10.731707)" stroke="#FFFFFF" stroke-linecap="round" stroke-width="2">
+                                <path d="M0,9.75609756 L15.6097561,9.75609756" id="Path-7"></path>
+                                <polyline id="Path-8" points="6.82926829 0 16.5853659 9.60594071 6.82926829 18.5365854"></polyline>
+                            </g>
+                        </g>
+                    </g>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

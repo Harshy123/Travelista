@@ -1,0 +1,280 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.banner {
+  background-image: url('../../images/img_home_banner.png');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding: {
+    top: 50px;
+    bottom: 120px;
+  }
+  @include breakpoint(small only) {
+    padding: {
+      top: 40px;
+      bottom: 50px;
+    }
+  }
+}
+
+.header {
+  padding: {
+    bottom: 100px;
+  }
+
+  @include breakpoint(small only) {
+    padding: {
+      bottom: 20px;
+    }
+  }
+}
+
+.blurb {
+  width: 100%;
+  color: $ht-white;
+  font-family: $ht-font;
+  font-size: 32px;
+  line-height: 48px;
+  min-height: 180px;
+  margin: {
+    bottom: 10px;
+  }
+  text-transform: uppercase;
+  white-space: pre-line;
+}
+
+.currencySelection {
+  color: $ht-white;
+  font-family: $ht-font;
+  font-size: 16px;
+  align-self: center;
+}
+
+.buttonGroup {
+  @include breakpoint(small only) {
+    margin: {
+      left: 40px;
+      right: 40px;
+    }
+  }
+}
+
+.button {
+  width: 100%;
+  letter-spacing: 3px;
+  margin: {
+    top: 20px;
+    bottom: 20px;
+  }
+}
+
+.section {
+  margin: {
+    bottom: 70px;
+  }
+  @include breakpoint(small only) {
+    margin: {
+      bottom: 40px;
+    }
+  }
+}
+
+.sectionTitle {
+  color: $ht-black;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 6px;
+  margin: {
+    top: 40px;
+    bottom: 40px;
+  }
+}
+
+.sectionInfo {
+  font-size: 16px;
+  text-align: center;
+  line-height: 30px;
+}
+
+.image {
+  width: 100%;
+  object-fit: contain;
+  margin: {
+    top: 30px;
+  }
+}
+
+.hotelGroupImages {
+  text-align: center;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 120px;
+    margin: 12px;
+  }
+}
+
+.scrollView {
+  display: inline-block;
+  white-space: nowrap;
+
+  &::-webkit-scrollbar {
+    width: 0px; /* pxove scrollbar space */
+    background: transparent; /* optional: just make scrollbar invisible */
+  }
+
+  @include breakpoint(medium up) {
+    display: none;
+  }
+}
+
+.scrollItemContainer {
+  display: inline-block;
+  padding-left: 8px;
+  padding-right: 8px;
+
+  &:first-child {
+    padding-left: 16px;
+  }
+
+  &:last-child {
+    padding-right: 16px;
+  }
+}
+
+.scrollItem {
+  white-space: initial;
+  color: $ht-black;
+  height: 70vh;
+  background: {
+    repeat: no-repeat;
+    position: center;
+    size: cover;
+  }
+  margin: auto;
+  width: 80vw;
+  display: inline-block;
+  border: solid 1px $ht-super-light-gray;
+}
+
+.itemName {
+  font-weight: 400;
+  letter-spacing: 1px;
+  font-size: 20px;
+  height: 175px;
+  width: 175px;
+  text-align: center;
+  background-color: rgba(255, 255, 255, 0.8);
+  position: relative;
+  top: calc(50% - 150px / 2);
+  margin: auto;
+  text-transform: uppercase;
+}
+
+.itemNameText {
+  display: table-cell;
+  margin: auto;
+  vertical-align: middle;
+  height: 175px;
+  width: 175px;
+}
+
+.grid {
+  @include breakpoint(medium up) {
+    position: relative;
+    left: 8px;
+    display: flex;
+    .column {
+      display: flex;
+      flex-direction: column;
+      width: 318px;
+      .shortRow {
+        position: relative;
+        width: 100%;
+        &:before {
+          content: '';
+          display: block;
+          padding-top: 100%;
+        }
+
+        .cell {
+          width: 300px;
+          height: 300px;
+        }
+      }
+      .longRow {
+        position: relative;
+        width: 100%;
+        &:before {
+          content: '';
+          display: block;
+          padding-top: 200%;
+        }
+
+        .cell {
+          width: 300px;
+          height: 618px;
+        }
+      }
+    }
+    .cell {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: 0;
+      left: 0;
+      bottom: 0;
+      right: 0;
+      margin: 9px;
+      .cellImage {
+        position: absolute;
+        z-index: 0;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+      }
+      .cellInfo {
+        font-weight: 100;
+        letter-spacing: 2px;
+        position: relative;
+        z-index: 1;
+        background-color: $ht-white;
+        opacity: 0.8;
+        width: 45%;
+        &:before {
+          content: '';
+          display: block;
+          padding-top: 100%;
+        }
+        .cellInfoContent {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: absolute;
+          text-transform: uppercase;
+          top: 0;
+          left: 0;
+          right: 0;
+          bottom: 0;
+          color: $ht-black;
+          font-size: 15px;
+          vertical-align: middle;
+          text-align: center;
+          margin: {
+            left: 5px;
+            right: 5px;
+          }
+        }
+      }
+    }
+  }
+  @include breakpoint(small only) {
+    display: none;
+  }
+}

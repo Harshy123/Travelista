@@ -1,0 +1,91 @@
+.ht-toastr {
+    width: 100%;
+    text-align: center;
+}
+
+.ht-toastr .bottom-center {
+    left: 0 !important;
+    width: 100% !important;
+    margin-left: auto !important;
+    text-align: center;
+}
+
+.ht-toastr .toastr.rrt-error {
+    background-color: #973a2b !important;
+}
+
+.ht-toastr .toastr.rrt-success {
+    background-color: #706d72 !important;
+}
+
+.ht-toastr .toastr.rrt-light {
+    background-color: #66ae95 !important;
+}
+
+.ht-toastr .toastr.rrt-error,
+.ht-toastr .toastr.rrt-success,
+.ht-toastr .toastr.rrt-light {
+    display: inline-block;
+    min-height: auto !important;
+    border-radius: 1000px;
+    width: auto !important;
+    margin: 20px;
+}
+.ht-toastr .toastr.rrt-error .rrt-left-container,
+.ht-toastr .toastr.rrt-success .rrt-left-container,
+.ht-toastr .toastr.rrt-light .rrt-left-container {
+    display: none;
+}
+
+.ht-toastr .toastr.rrt-error .rrt-middle-container,
+.ht-toastr .toastr.rrt-success .rrt-middle-container,
+.ht-toastr .toastr.rrt-light .rrt-middle-container {
+    display: inline-block;
+    width: auto !important;
+    min-width: 300px;
+    text-align: center;
+    margin: 10px 24px;
+}
+
+.ht-toastr .toastr.rrt-error .rrt-middle-container .rrt-title,
+.ht-toastr .toastr.rrt-success .rrt-middle-container .rrt-title,
+.ht-toastr .toastr.rrt-light .rrt-middle-container .rrt-title {
+    font-size: 16px;
+    font-weight: 300;
+    position: relative;
+    top: 3px;
+    color: white;
+}
+
+.ht-toastr .bottom-center {
+    bottom: 67vh !important;
+}
+
+.Select-input {
+    padding-left: 0px !important;
+}
+
+.Select-menu .is-selected,
+.Select-menu .is-focused {
+    background-color: rgba(102, 174, 149, 0.3) !important;
+}
+
+.Select-value {
+    padding-right: 25px !important;
+}
+
+.Select.has-value.Select--single
+    > .Select-control
+    .Select-value
+    .Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single
+    > .Select-control
+    .Select-value
+    .Select-value-label {
+    position: relative;
+    left: 1px;
+}
+
+.Select-menu {
+    border-color: #66ae95 !important;
+}

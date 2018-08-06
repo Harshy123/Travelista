@@ -1,0 +1,497 @@
+@import '../../styles/variables.scss';
+@import '../../styles/foundation.scss';
+
+.roomTitle {
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  text-transform: uppercase;
+  padding: 0;
+  margin: {
+    top: 20px;
+    bottom: 52px;
+  }
+}
+
+.travelistaDetails {
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  display: flex;
+  align-items: center;
+  padding: 0;
+  margin: {
+    bottom: 40px;
+  }
+}
+
+.formControl {
+  padding: {
+    bottom: 25px;
+  }
+  &:first-child,
+  &:nth-child(odd) {
+    padding: {
+      right: 10px;
+    }
+  }
+  &:last-child:not(:only-child),
+  &:nth-child(event):not(:only-child) {
+    padding: {
+      left: 10px;
+    }
+  }
+}
+
+.fullFormControl {
+  padding: {
+    bottom: 25px;
+  }
+}
+
+.roomForm {
+  margin: {
+    top: 20px;
+    bottom: 20px;
+  }
+
+  padding: {
+    right: 60px;
+  }
+}
+
+.roomInfo {
+  padding: {
+    right: 60px;
+  }
+}
+
+.tripInfomationTitle {
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  font-weight: 500;
+  margin: {
+    bottom: 30px;
+  }
+}
+.dropDown {
+  margin: {
+    left: 3px;
+  }
+}
+
+.textArea {
+  resize: none;
+  width: 100%;
+  font-family: $ht-font;
+  font-weight: 300;
+  border: 1px solid $ht-light-gray;
+  height: 145px;
+  padding: 10px;
+  &::placeholder {
+    color: $ht-light-gray;
+    font-family: $ht-font;
+    font-size: 16px;
+  }
+}
+
+.specialRequestTitle {
+  display: inline-block;
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin: {
+    bottom: 20px;
+  }
+}
+
+.specialRequest {
+  margin: {
+    bottom: 90px;
+  }
+}
+.saveSpecialRequest {
+  margin: {
+    top: 20px;
+  }
+}
+
+.creditCard {
+  border: 1px solid $ht-light-gray;
+  padding: 30px;
+  margin: {
+    top: 23px;
+    bottom: 23px;
+  }
+}
+
+.creditCardTitle {
+  font-size: 16px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  padding: 0;
+}
+
+.creditCardIconContainer {
+  display: inline-block;
+  height: 28px;
+  width: 45px;
+}
+
+.creditCardIcon {
+  height: 100%;
+  width: 100%;
+}
+
+.creditCardInfo {
+  border: 1px solid $ht-light-gray;
+  padding: 30px;
+  font-size: 16px;
+}
+
+.creditCardInfoRow {
+  padding: {
+    bottom: 3px;
+  }
+}
+
+.paymentInfo {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  color: $ht-black;
+  position: absolute;
+  bottom: 23px;
+  right: 0;
+}
+
+.paymentInfoRight {
+  position: relative;
+}
+
+.priceLabel {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.capacityLabel {
+  font-size: 16px;
+}
+
+.price {
+  font-size: 24px;
+  font-weight: 500;
+  margin: {
+    top: 10px;
+  }
+  position: relative;
+  left: 29px;
+}
+
+.taxInclusive {
+  font-weight: 400;
+  font-size: 12px;
+  margin: {
+    bottom: 10px;
+  }
+}
+
+.selectedDates {
+  min-height: 20px;
+  font-size: 16px;
+  text-align: right;
+}
+
+.selectedDate {
+  span {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+  }
+}
+
+.partnerCodeAndButton {
+  display: flex;
+  justify-content: space-between;
+  margin: {
+    bottom: 60px;
+  }
+}
+
+.buttonContent {
+  padding: {
+    left: 45px;
+    right: 45px;
+  }
+}
+
+.creditCardCheckbox {
+  display: flex;
+}
+
+.creditCardHint {
+  margin: {
+    left: 10px;
+  }
+  position: relative;
+  bottom: 2px;
+}
+
+.checkboxText {
+  font-size: 16px;
+  color: $ht-light-gray;
+  margin: {
+    left: 8px;
+  }
+}
+
+.paymentCheckboxLabel {
+  margin: {
+    top: 23px;
+    bottom: 23px;
+  }
+}
+
+.paymentCheckboxText {
+  color: black;
+}
+
+.checkboxLabel {
+  display: flex;
+}
+
+.header {
+  text-align: center;
+  padding: {
+    top: 44px;
+    bottom: 44px;
+  }
+}
+
+.headerWrapper {
+  position: relative;
+}
+
+.title {
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 500;
+  margin: {
+    bottom: 20px;
+  }
+}
+
+.subtitle {
+  font-size: 16px;
+  margin: {
+    bottom: 20px;
+  }
+}
+.countDownContainer {
+  display: flex;
+  justify-content: center;
+}
+.countDown {
+  color: $ht-white;
+  font-size: 16px;
+  padding: 18px 30px 20px 30px;
+  border-radius: 100px;
+  background-color: $ht-green;
+}
+
+.backButtonContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingContainer {
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.loading {
+  width: 10px;
+  height: 10px;
+  animation: rotate 2s linear infinite;
+}
+
+.upgradeContainer {
+  margin: {
+    bottom: 60px;
+  }
+}
+
+.upgradeTitle {
+  font-size: 28px;
+  font-weight: 500;
+  text-align: center;
+  letter-spacing: 3px;
+  margin: {
+    bottom: 40px;
+  }
+}
+
+.recommendedContainer {
+  border: 1px solid $ht-light-gray;
+  display: flex;
+  min-height: 150px;
+}
+
+.recommendedImageContainer {
+  width: 150px;
+  height: 150px;
+}
+
+.recommendedInfo {
+  flex: 1 0 auto;
+  padding: 14px;
+  font-size: 16px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.recommendedInfoTitle {
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.recommendedInfoPrice {
+  font-size: 24px;
+  font-weight: 500;
+}
+
+.recommendedInfoBlurb {
+  font-size: 14px;
+}
+
+.recommendLeft {
+  padding: {
+    right: 8px;
+  }
+}
+
+.recommendRight {
+  padding: {
+    left: 8px;
+  }
+}
+
+.recommendedButtonContent {
+  padding: {
+    top: 7px;
+    bottom: 7px;
+  }
+}
+
+.extensionContainer {
+  background-color: $ht-white;
+  min-width: 777px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.extensionTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin: {
+    top: 32px;
+  }
+}
+
+.redirectionContainer {
+  background-color: $ht-white;
+  min-width: 777px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.redirectionTitle {
+  font-size: 24px;
+  font-weight: 500;
+  margin: {
+    top: 32px;
+    bottom: 25px;
+  }
+}
+
+.redirectionContent {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.extensionCountDown {
+  margin: {
+    top: 32px;
+  }
+  font-size: 16px;
+}
+
+.buttons {
+  margin: {
+    top: 32px;
+    bottom: 32px;
+  }
+}
+
+.button {
+  width: 300px;
+  margin: {
+    top: 10px;
+  }
+}
+
+.noButton {
+  border: none;
+}
+
+.noButtonContent {
+  color: $ht-light-gray;
+}
+
+.payButtonWrapper {
+  width: 100%;
+  display: inline-block;
+}
+
+.payButton {
+  width: 300px;
+  height: 52px;
+  float: right;
+  margin: {
+    top: 3px;
+    bottom: 23px;
+  }
+}
+
+.textArea {
+  font-size: 16px;
+}
+
+.hintDropDown {
+  margin: {
+    left: 3px;
+  }
+}
+
+.tripFlightInput {
+  position: relative;
+  bottom: 5px;
+}

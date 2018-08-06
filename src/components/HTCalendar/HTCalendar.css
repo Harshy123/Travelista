@@ -1,0 +1,107 @@
+.ht-calendar.DayPicker {
+    width: 100%;
+}
+
+.ht-calendar .DayPicker-wrapper {
+    width: 100%;
+}
+
+.ht-calendar .DayPicker-Months {
+    justify-content: space-around;
+}
+
+.ht-calendar .DayPicker-Month {
+    border-collapse: separate;
+    border-spacing: 0 4px;
+}
+
+.ht-calendar .DayPicker-Weekday {
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+
+.ht-calendar .DayPicker-Day {
+    height: 38px;
+    padding: 0;
+}
+
+.ht-calendar .DayPicker-Day .DayPicker-Wrapper {
+    font-size: 12px;
+    line-height: 10px;
+    padding: 0 15px;
+}
+
+.ht-calendar
+    .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside) {
+    position: relative;
+    background-color: rgba(102, 174, 149, 0.5);
+    color: black !important;
+    border-radius: 0;
+}
+
+.ht-calendar .DayPicker-Day--selected:not(.DayPicker-Day--outside) {
+    position: relative;
+    background-color: rgba(102, 174, 149, 0.5);
+    border-radius: 0;
+}
+
+.ht-calendar
+    .DayPicker-Day--start.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside),
+.ht-calendar
+    .DayPicker-Day--start.DayPicker-Day--selected:not(.DayPicker-Day--outside) {
+    border-top-left-radius: 100px;
+    border-bottom-left-radius: 100px;
+}
+
+.ht-calendar
+    .DayPicker-Day--end.DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside),
+.ht-calendar
+    .DayPicker-Day--end.DayPicker-Day--selected:not(.DayPicker-Day--outside) {
+    border-top-right-radius: 100px;
+    border-bottom-right-radius: 100px;
+}
+
+/* selected days */
+.ht-calendar .DayPicker-Day--selected {
+    font-weight: 500;
+}
+
+/* when hovering not selected block */
+.ht-calendar.DayPicker:not(.DayPicker--interactionDisabled)
+    .DayPicker-Day:not(.DayPicker-Day--disabled):not(.DayPicker-Day--selected):not(.DayPicker-Day--outside):hover {
+    background-color: #eeeeee;
+    border-radius: 1000px;
+}
+
+/* when hovering selected block */
+.ht-calendar
+    .DayPicker-Day--selected:not(.DayPicker-Day--disabled):not(.DayPicker-Day--outside):hover {
+    background-color: rgba(102, 174, 149, 0.3);
+}
+
+/* today */
+.ht-calendar .DayPicker-Day--today:not(.DayPicker-Day--disabled) {
+    color: black;
+    font-weight: 300;
+}
+
+.DayPicker-Month:nth-child(odd) {
+    padding-right: 15px;
+}
+
+.DayPicker-Month:nth-child(even) {
+    padding-left: 15px;
+}
+
+.ht-calendar .DayPicker-Day--disabled {
+    color: #dce0e0;
+}
+
+.ht-calendar .DayPicker-green {
+    font-weight: 700;
+    color: #66ae95;
+}
+
+.ht-calendar .DayPicker-Day--disabled .DayPicker-green {
+    color: #dce0e0;
+}

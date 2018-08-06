@@ -1,0 +1,38 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.offerHeader {
+  height: 120px;
+  width: 100%;
+  @include breakpoint(small only) {
+    height: 65px;
+  }
+}
+
+.offerHeaderWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  @include breakpoint(small only) {
+    justify-content: center;
+  }
+}
+
+.title {
+  color: $ht-black;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 700;
+}
+
+.offers {
+  margin: {
+    bottom: 40px;
+  }
+}
+
+.emptyContainer {
+  font-size: 18px;
+  font-weight: 500;
+}

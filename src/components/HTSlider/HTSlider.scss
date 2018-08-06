@@ -1,0 +1,93 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.sliderContainer {
+  position: relative;
+  display: block;
+  width: 100%;
+  height: $slider-height;
+  @include breakpoint(small only) {
+    height: $slider-height-small;
+  }
+}
+
+.navWrapper {
+  cursor: pointer;
+  position: absolute;
+  top: calc(#{$slider-height} / 2 - 85px / 2);
+  right: 0;
+  bottom: 0;
+  width: 85px;
+  height: 85px;
+  background-color: $ht-light-gray;
+  opacity: 0.6;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  z-index: 1;
+  @include breakpoint(small only) {
+    width: 35px;
+    height: 35px;
+    top: calc(#{$slider-height-small} / 2 - 35px / 2);
+  }
+
+  &:first-child {
+    left: 0;
+    z-index: 1;
+  }
+}
+
+.navIcon {
+  width: 13px;
+  height: 32px;
+  @include breakpoint(small only) {
+    width: 6px;
+    height: 13px;
+  }
+}
+
+.dots {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  text-align: center;
+  opacity: 0.8;
+  margin: {
+    left: auto;
+    right: auto;
+    bottom: 8px;
+  }
+  & > li {
+    display: inline-block;
+    cursor: pointer;
+  }
+}
+
+.dot {
+  font-size: 40px;
+  padding: 0 5px;
+  color: $ht-light-gray;
+}
+
+.dotActive {
+  color: $ht-white;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background: linear-gradient(
+    to right,
+    rgba(40, 40, 40, 0.4),
+    rgba(0, 0, 0, 0.1),
+    rgba(40, 40, 40, 0.4)
+  );
+  pointer-events: none;
+  width: 100%;
+  height: 100%;
+}

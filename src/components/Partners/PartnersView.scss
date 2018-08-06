@@ -1,0 +1,36 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.section {
+  margin: {
+    bottom: 70px;
+  }
+}
+
+.sectionTitle {
+  color: $ht-black;
+  font-size: 24px;
+  text-align: center;
+  font-weight: 600;
+  letter-spacing: 6px;
+  margin: {
+    top: 90px;
+    bottom: 40px;
+  }
+}
+
+.image {
+  width: 100%;
+  object-fit: contain;
+  font-family: 'object-fit: contain;';
+}
+
+.hotelGroupImages {
+  text-align: center;
+  img {
+    display: inline-block;
+    vertical-align: middle;
+    max-height: 60px;
+    margin: 12px;
+  }
+}

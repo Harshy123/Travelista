@@ -1,0 +1,104 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.content {
+  max-width: 650px;
+}
+.titleSection {
+  margin: {
+    top: 45px;
+    bottom: 20px;
+  }
+  @include breakpoint(small only) {
+    text-align: center;
+  }
+}
+
+.title {
+  font-size: 38px;
+  font-weight: 500;
+  color: $ht-black;
+}
+
+.subtitle {
+  font-size: 18px;
+  color: $ht-light-gray;
+  margin: {
+    top: 10px;
+  }
+}
+
+.formSection {
+  flex: 1;
+  margin: {
+    top: 40px;
+    bottom: 40px;
+  }
+}
+
+.formControl {
+  width: 100%;
+  margin: {
+    bottom: 30px;
+  }
+  & > div:nth-child(odd) {
+    padding: {
+      right: 8px;
+    }
+    @include breakpoint(small only) {
+      padding: {
+        right: 0px;
+      }
+    }
+  }
+
+  & > div:nth-child(even) {
+    padding: {
+      left: 8px;
+    }
+    @include breakpoint(small only) {
+      margin: {
+        top: 30px;
+      }
+      padding: {
+        left: 0px;
+      }
+    }
+  }
+}
+
+.checkboxText {
+  font-size: 16px;
+  color: $ht-light-gray;
+  margin: {
+    left: 8px;
+  }
+  width: calc(100% - 8px);
+}
+
+.link {
+  color: $ht-light-green;
+}
+
+.button {
+  width: 100%;
+  padding: {
+    top: 3px;
+    bottom: 3px;
+  }
+}
+
+.checkboxLabel {
+  display: flex;
+}
+
+.countryCode {
+  padding-right: 8px;
+}
+
+.mobileNumber {
+  @include breakpoint(medium up) {
+    position: relative;
+    top: 3px;
+  }
+}

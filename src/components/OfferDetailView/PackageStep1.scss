@@ -1,0 +1,340 @@
+@import '../../styles/variables.scss';
+
+.mainContainer {
+  position: relative;
+}
+.title {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  color: $ht-black;
+  text-align: center;
+  padding: {
+    top: 28px;
+    bottom: 28px;
+  }
+}
+
+.prices {
+  text-align: center;
+  margin: {
+    bottom: 32px;
+  }
+}
+.priceContainer {
+  display: inline-block;
+  &:first-child {
+    margin: {
+      right: 10px;
+    }
+  }
+  &:last-child {
+    margin: {
+      left: 10px;
+    }
+  }
+}
+
+.priceTitle {
+  color: $ht-light-gray;
+  font-size: 14px;
+  margin: {
+    bottom: 4px;
+  }
+}
+
+.price {
+  color: $ht-black;
+  font-weight: 500;
+  font-size: 18px;
+}
+
+.capacity {
+  text-align: center;
+}
+
+.capacityHint {
+  font-size: 12px;
+  font-weight: 500;
+  text-align: center;
+  margin: {
+    bottom: 30px;
+  }
+}
+
+.capacityTitle {
+  font-size: 12px;
+  color: $ht-gray;
+}
+
+.dropdownContainer {
+  display: inline-block;
+  margin: {
+    left: 20px;
+    right: 20px;
+  }
+}
+
+.capacityDropdowns {
+  text-align: center;
+  margin: {
+    bottom: 30px;
+  }
+}
+
+.dropdown {
+  width: 50px;
+  color: $ht-black !important;
+  font-weight: 500;
+  margin: {
+    left: auto;
+    right: auto;
+  }
+  border: {
+    bottom: 2px solid $ht-light-gray;
+  }
+  // placeholder
+  & > div:first-child > span:first-child > div:first-child {
+    color: $ht-black !important;
+    text-align: left;
+  }
+}
+
+.dropdownArrow {
+  width: 12px;
+  height: 6px;
+}
+
+.calendarContainer {
+  text-align: center;
+  margin: {
+    top: 45px;
+    bottom: 45px;
+  }
+}
+
+.backButtonContainer {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 35px;
+  height: 35px;
+  margin: {
+    top: 28px;
+  }
+}
+
+.calendarTitle {
+  font-size: 28px;
+  font-weight: 500;
+  letter-spacing: 3px;
+  margin: {
+    bottom: 10px;
+  }
+}
+
+.specialDate {
+  text-transform: uppercase;
+  font-weight: 400;
+  margin: {
+    bottom: 40px;
+  }
+}
+
+.info {
+  margin: {
+    bottom: 50px;
+  }
+}
+
+.priceLabel {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.capacityLabel {
+  font-size: 16px;
+  text-align: right;
+}
+
+.selectedDates {
+  min-height: 20px;
+  font-size: 16px;
+  text-align: right;
+}
+
+.selectedDate {
+  span {
+    display: inline-block;
+    width: 100px;
+    text-align: right;
+  }
+}
+
+.originalPrice {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: right;
+}
+
+.originalPriceLabel {
+  display: inline-block;
+  min-width: 100px;
+  text-align: right;
+}
+
+.originalPriceTag {
+  display: inline-block;
+  min-width: 100px;
+  padding-left: 10px;
+  text-align: right;
+}
+
+.finalPrice {
+  font-size: 24px;
+  font-weight: 500;
+  text-align: right;
+  position: relative;
+  left: 29px;
+  clear: both;
+}
+
+.finalPriceTag {
+  padding-left: 10px;
+}
+
+.textAlignCenter {
+  text-align: center !important;
+}
+
+.discountCode {
+  color: $ht-light-gray;
+  clear: both;
+}
+
+.priceOff {
+  float: right;
+}
+
+.promoCodeInput {
+  float: left;
+}
+
+.discount {
+  max-height: 19px;
+  &:after {
+    content: '';
+    clear: both;
+    display: table;
+  }
+}
+
+.buttonContainer {
+  text-align: center;
+}
+
+.button {
+  margin: {
+    left: auto;
+    right: auto;
+  }
+}
+
+.buttonContent {
+  padding: {
+    left: 110px;
+    right: 110px;
+    top: 17px;
+    bottom: 17px;
+  }
+}
+
+.mainContent {
+  margin: {
+    bottom: 35px;
+  }
+}
+
+.policies {
+  margin: {
+    top: 60px;
+    bottom: 60px;
+  }
+  padding: {
+    top: 35px;
+    bottom: 35px;
+  }
+  border: {
+    top: 1px $ht-light-gray solid;
+    bottom: 1px $ht-light-gray solid;
+  }
+}
+
+.policiesLabel {
+  font-size: 24px;
+  font-weight: 500;
+  margin: {
+    bottom: 35px;
+  }
+}
+
+.policyContent {
+  font-size: 12px;
+}
+
+.policySpan {
+  display: block;
+  margin: {
+    bottom: 25px;
+  }
+}
+
+.hintDropDown {
+  margin: {
+    left: 5px;
+  }
+  position: relative;
+  bottom: 2px;
+}
+
+.textInput {
+  width: 300px;
+}
+
+.calendarTip {
+  font-size: 12px;
+  min-height: 20px;
+}
+
+.calendarSelectionTip {
+  min-height: 15px;
+}
+
+.error {
+  border-radius: 100px;
+  padding: 20px 30px;
+  background-color: $ht-red;
+  font-size: 14px;
+  color: white;
+  min-height: 20px;
+  font-weight: 500;
+  line-height: 57px;
+}
+
+.loadingIndicatorContainer {
+  min-height: 30px;
+  margin: {
+    bottom: 30px;
+  }
+}
+
+.taxInclusive {
+  font-size: 12px;
+  position: relative;
+  right: 29px;
+}
+
+.green {
+  color: $ht-green;
+}

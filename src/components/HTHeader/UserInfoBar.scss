@@ -1,0 +1,58 @@
+@import '../../styles/variables.scss';
+
+.userInfoBar {
+  flex: 1;
+  display: inline-flex;
+  font-size: 16px;
+  color: $ht-white;
+}
+
+.largeUserInfoBar {
+  font-size: 18px;
+
+  .profilePicture {
+    width: 82px;
+    height: 82px;
+
+    img {
+      max-height: 82px;
+    }
+  }
+
+  .greeting {
+    padding-left: 25px;
+  }
+}
+
+.accountLink {
+  display: inline-flex;
+  color: $ht-white;
+
+  .greeting {
+    align-self: center;
+    padding-left: 10px;
+  }
+}
+
+.profilePicture {
+  display: inline-flex;
+  width: 40px;
+  height: 40px;
+  background: $ht-ultra-light-gray;
+  border: 1px solid #dbdbdb;
+  border-radius: 100%;
+  overflow: hidden;
+  justify-content: center;
+
+  img {
+    max-height: 40px;
+  }
+
+  span {
+    font-size: 20px;
+    color: $ht-black;
+    letter-spacing: 0;
+    font-weight: 400;
+    align-self: center;
+  }
+}

@@ -1,0 +1,17 @@
+@import '../../styles/variables.scss';
+
+.container {
+  width: 230px;
+}
+
+.select {
+  color: $ht-black !important;
+  font-weight: 500;
+  border: none;
+
+  // placeholder
+  & > div:first-child > span:first-child > div:first-child {
+    color: $ht-black !important;
+    padding-left: 5px;
+  }
+}

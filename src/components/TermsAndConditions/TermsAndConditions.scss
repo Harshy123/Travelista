@@ -1,0 +1,56 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+.termsAndConditionsHeader {
+  height: 120px;
+  width: 100%;
+  @include breakpoint(small only) {
+    border-bottom: none;
+  }
+  border-bottom: 1px solid #cccccc;
+}
+
+.termsAndConditionsHeaderWrapper {
+  height: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.title {
+  color: $ht-black;
+  font-size: 28px;
+  letter-spacing: 3px;
+  font-weight: 700;
+  text-transform: uppercase;
+  @include breakpoint(small only) {
+    padding: {
+      left: 10px;
+    }
+  }
+}
+
+.termsAndConditionsArticle {
+  text-align: justify;
+  font-size: 16px;
+  color: $ht-black;
+  line-height: 23px;
+  padding: 50px 20px;
+  a {
+    color: $ht-light-green;
+  }
+  h3 {
+    font-size: 24px;
+    line-height: 30px;
+  }
+  ul {
+    margin-left: 30px;
+  }
+  @include breakpoint(small only) {
+    padding: 20px 20px 40px 20px;
+
+    h3 {
+      text-align: left;
+    }
+  }
+}

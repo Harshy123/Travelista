@@ -1,0 +1,10 @@
+@import './variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+@include foundation-xy-grid-classes;
+@include foundation-visibility-classes;
+
+.grid-container {
+  padding-right: 15px !important;
+  padding-left: 15px !important;
+}

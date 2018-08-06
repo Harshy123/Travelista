@@ -1,0 +1,162 @@
+@import '../../styles/variables.scss';
+@import '~foundation-sites/scss/foundation';
+
+$slider-height: 460px;
+$slider-height-small: 200px;
+.sliderContainer {
+  height: $slider-height;
+  position: relative;
+  @include breakpoint(small only) {
+    height: $slider-height-small;
+  }
+}
+
+.slide {
+  position: relative;
+}
+
+.slideContainer {
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.image {
+  position: relative;
+  width: 100%;
+  height: calc(100vw * 9 / 16);
+  max-height: 600px;
+}
+.backgroundImage {
+  object-fit: cover;
+  font-family: 'object-fit: cover;';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100%;
+  width: 100%;
+
+  background: linear-gradient(
+    to right,
+    rgba(40, 40, 40, 0.4),
+    rgba(0, 0, 0, 0.1),
+    rgba(40, 40, 40, 0.4)
+  );
+}
+.slideContent {
+  position: relative;
+}
+
+.logo {
+  display: flex;
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  right: 0;
+  bottom: 0;
+  width: 135px;
+  height: 135px;
+  background-color: $ht-white;
+  @include breakpoint(small only) {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+.detailed {
+  text-align: center;
+}
+
+.hotelName {
+  font-size: 24px;
+  color: $ht-black;
+  text-align: center;
+  font-weight: 600;
+  margin: {
+    top: 15px;
+    bottom: 15px;
+  }
+}
+
+.time {
+  text-align: center;
+  margin: {
+    bottom: 15px;
+  }
+}
+
+.days {
+  font-weight: 600;
+  color: $ht-green;
+}
+
+.clockIcon {
+  display: inline-block !important;
+  vertical-align: middle;
+  width: 20px;
+  height: 20px;
+  margin: {
+    right: 10px;
+  }
+}
+
+.viewDetailButton {
+  margin: 0 auto;
+}
+
+.timeDetail {
+  font-size: 18px;
+  color: $ht-black;
+  vertical-align: middle;
+}
+
+.buttonContent {
+  font-size: 18px;
+  padding: {
+    top: 10px;
+    bottom: 10px;
+    left: 20px;
+    right: 20px;
+  }
+}
+
+.navWrapper {
+  position: absolute;
+  z-index: 1;
+  width: 85px;
+  height: 85px;
+  background-color: $ht-black;
+  opacity: 0.7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  pointer-events: auto;
+  cursor: pointer;
+  @include breakpoint(small only) {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+.navPrev {
+  left: 0;
+}
+
+.navNext {
+  right: 0;
+}
+
+.navIcon {
+  width: 13px;
+  height: 32px;
+  @include breakpoint(small only) {
+    width: 6px;
+    height: 13px;
+  }
+}
+
+.loadingContainer {
+  display: flex;
+  justify-content: center;
+}

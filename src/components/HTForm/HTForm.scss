@@ -1,0 +1,210 @@
+@import '~foundation-sites/scss/foundation';
+@import '../../styles/variables.scss';
+
+$border: 1px solid $ht-light-gray;
+$errorBorder: 2px solid $ht-red !important;
+
+@mixin placeholderStyle {
+  font-family: $ht-font !important;
+  font-weight: 300 !important;
+  font-size: 16px !important;
+  color: $ht-light-gray !important;
+}
+
+@mixin borderStyle {
+  border-bottom: $border;
+  padding: {
+    top: 4px;
+    bottom: 10px;
+  }
+}
+
+.textInput {
+  flex: 1;
+  width: 100%;
+  font-family: $ht-font;
+  font-weight: 300;
+  color: $ht-black;
+  font-size: 16px;
+  &::placeholder {
+    @include placeholderStyle;
+  }
+  &::-ms-input-placeholder {
+    @include placeholderStyle;
+  }
+}
+
+.textWithHint {
+  display: flex;
+  @include borderStyle;
+  &.inlineLabelInput {
+    input {
+      padding: {
+        right: 10px;
+      }
+    }
+  }
+}
+
+.error {
+  border-bottom: $errorBorder;
+}
+
+.disabled {
+  opacity: 0.6;
+  input {
+    background-color: transparent;
+  }
+}
+
+$hintIconSize: 16px;
+.hintDropDown {
+  margin: {
+    top: 3px;
+  }
+}
+
+.optional {
+  font-size: 12px;
+  color: $ht-light-gray;
+}
+
+.optionalAndError {
+  display: flex;
+  margin: {
+    top: 5px;
+  }
+}
+
+.errorMessage {
+  flex: 1;
+  text-align: right;
+  font-size: 14px;
+  color: $ht-red;
+  font-weight: 700;
+}
+
+.hint {
+  position: relative;
+  bottom: 5px;
+}
+
+.hintIcon {
+  width: $hintIconSize;
+  height: $hintIconSize;
+}
+
+.hintTextWrapper {
+  font-size: 15px;
+  color: $ht-light-gray !important;
+  width: 300px;
+  font-weight: 100 !important;
+  letter-spacing: 0 !important;
+}
+
+.hintText {
+  margin: 0;
+  text-align: left !important;
+  white-space: initial !important;
+}
+
+.selectWrapper {
+  position: relative;
+  margin-bottom: -15px;
+}
+
+.select {
+  font-size: 16px;
+  color: $ht-light-gray;
+  width: 100%;
+  border-bottom: $border;
+  & *:hover {
+    box-shadow: none !important;
+  }
+  // placeholder
+  & > div:first-child > span:first-child > div:first-child {
+    padding-left: 0px;
+  }
+  // control
+  & > div {
+    border: none;
+    cursor: pointer;
+  }
+  & [role='listbox'] {
+    font-size: 14px;
+    font-weight: 500;
+    border: $border;
+  }
+}
+
+.inlineLabelInput {
+  position: relative;
+  & input {
+    @include breakpoint(small only) {
+      text-align: right;
+    }
+  }
+  & input::placeholder {
+    @include breakpoint(small only) {
+      color: $ht-white;
+    }
+  }
+}
+
+.inlineLabelSelect {
+  & > div:first-child > span:first-child > div:first-child {
+    @include breakpoint(small only) {
+      left: auto;
+      right: 25px;
+    }
+  }
+}
+
+.label {
+  font-size: 14px;
+  line-height: 21px;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 1;
+  background: $ht-white;
+  color: $ht-brown;
+  padding: {
+    right: 5px;
+  }
+}
+
+.selectLabel {
+  line-height: 34px;
+}
+
+.disabled {
+  opacity: 0.6;
+  & > div:nth-child(2) > div {
+    background-color: $ht-white !important;
+  }
+}
+
+.option {
+  border-radius: 0px;
+}
+
+.option:hover {
+  background-color: rgba(102, 174, 149, 0.5) !important;
+}
+
+.description {
+  color: $ht-blue;
+  position: relative;
+  bottom: 4px;
+  font-size: 10px;
+  margin-left: 8px;
+}
+
+.textInputContainer {
+  margin-bottom: -15px;
+}
+
+.withPaddingBottom {
+  padding-bottom: 15px;
+}

@@ -1,0 +1,75 @@
+@import '../../styles/variables.scss';
+
+.calendarContainer {
+  font-family: $ht-font !important;
+  font-size: 16px;
+  min-height: 320px;
+  margin: {
+    top: 5px;
+  }
+}
+
+.monthCaption {
+  display: table-caption;
+  color: $ht-black;
+  font-weight: 500;
+  margin: {
+    top: 25px;
+    bottom: 54px;
+  }
+  font-size: 16px;
+  font-weight: 500;
+}
+
+.year {
+  margin: {
+    right: 10px;
+  }
+}
+
+.nav {
+  position: absolute;
+  top: 7%;
+  width: 100%;
+  padding-left: 6%;
+  padding-right: 6%;
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+.navPrev {
+  align-self: flex-start;
+}
+
+.navNext {
+  align-self: flex-end;
+}
+
+.navButton {
+  pointer-events: fill;
+}
+
+@keyframes rotate {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.loadingContainer {
+  position: absolute;
+  right: 20px;
+  top: 0;
+}
+
+.loading {
+  width: 10px;
+  height: 10px;
+  animation: rotate 2s linear infinite;
+}
+
+.dayPrice {
+  font-size: 10px;
+}

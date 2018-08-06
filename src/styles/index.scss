@@ -1,0 +1,73 @@
+@import './variables.scss';
+@import url('https://fonts.googleapis.com/css?family=Lato:300,300i,400,400i,700,700i');
+
+html,
+body {
+  height: 100vh;
+  min-height: 100%;
+  -webkit-overflow-scrolling: touch;
+
+  // FIXME: Disable responsive view by setting body min-width
+  min-width: $global-width;
+}
+
+// 1rem == 1px
+html {
+  font-size: $global-font-size !important;
+}
+
+body {
+  display: block !important;
+  margin: auto;
+  font-size: 16px;
+  font-family: $ht-font;
+  font-weight: 300;
+
+  // #root
+  > div:first-of-type {
+    overflow: auto;
+    height: 100%;
+  }
+}
+
+button {
+  padding: 0;
+  font: inherit;
+  border: none;
+  cursor: pointer;
+  background: $ht-transparent;
+}
+
+input {
+  border: none;
+  padding: 0;
+  margin: 0;
+  border-radius: 0;
+  -webkit-appearance: none;
+}
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: subpixel-antialiased;
+}
+
+*:focus {
+  outline: none;
+}
+
+a {
+  outline: none;
+  text-decoration: none;
+}
+
+p,
+figure,
+ul,
+li {
+  margin: 0;
+  -webkit-margin-before: 0;
+  -webkit-margin-after: 0;
+  -webkit-margin-start: 0;
+  -webkit-margin-end: 0;
+  -webkit-padding-start: 0;
+}

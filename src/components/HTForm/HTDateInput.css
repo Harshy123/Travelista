@@ -1,0 +1,59 @@
+.ht-date-input {
+    top: 14px;
+    left: 0;
+    z-index: 1;
+    position: absolute;
+    background: white;
+    -webkit-box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.15);
+}
+
+.ht-date-input .DayPicker-Day {
+    padding: 8px;
+}
+
+.ht-date-input .DayPicker-Day--today {
+    color: #66ae95;
+}
+
+.ht-date-input .DayPicker-Caption {
+    padding: 0 6px;
+    display: table-caption;
+    text-align: left;
+    margin-bottom: 6px;
+}
+
+.ht-date-input .DayPicker-Caption > div {
+    font-size: 20px;
+}
+
+.ht-date-input .DayPicker-NavButton {
+    position: absolute;
+    cursor: pointer;
+    top: 0px;
+    right: 0px;
+    margin-top: 2px;
+    color: #8b9898;
+    width: 15px;
+    height: 15px;
+    display: inline-block;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+.ht-date-input .DayPicker-NavButton--prev {
+    margin-right: 18px;
+}
+
+.ht-date-input .DayPicker-wrapper {
+    padding: 20px;
+}
+
+.ht-date-input .DayPicker-Month {
+    margin-bottom: 12px;
+}
+
+.ht-date-input .DayPicker-NavBar {
+    position: relative;
+}

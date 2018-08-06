@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="28px" height="26px" viewBox="0 0 28 26" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>Page 1</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="tab2/b" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-12.000000, 0.000000)">
+        <g id="Page-1" transform="translate(12.000000, 0.000000)">
+            <g id="Group-5" transform="translate(0.000000, 0.673776)" stroke="#31322F" stroke-width="0.5">
+                <polyline id="Stroke-1" points="6.37211707 8.78421463 0.341190244 8.78421463 0.341190244 21.5132878 0.341190244 24.507922 3.71075122 21.5132878 16.8140683 21.5132878 16.8140683 16.5654829"></polyline>
+                <polygon id="Stroke-3" points="27.3557268 16.5651415 27.3557268 20.3799707 23.0642146 16.5651415 6.37211707 16.5651415 6.37211707 0.350409756 27.3557268 0.350409756"></polygon>
+            </g>
+            <path d="M11.0455902,6.99781463 L22.6826634,6.99781463 L11.0455902,6.99781463 Z" id="Fill-6" fill="#31322F"></path>
+            <path d="M11.045522,6.99801951 L22.6825951,6.99801951" id="Stroke-7" stroke="#31322F" stroke-width="0.5"></path>
+            <path d="M11.0455902,11.0341171 L22.6826634,11.0341171 L11.0455902,11.0341171 Z" id="Fill-8" fill="#31322F"></path>
+            <path d="M11.045522,11.0342537 L22.6825951,11.0342537" id="Stroke-9" stroke="#31322F" stroke-width="0.5"></path>
+        </g>
+    </g>
+</svg>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="30px" height="30px" viewBox="0 0 30 30" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 48.2 (47327) - http://www.bohemiancoding.com/sketch -->
+    <title>btn-submit-small</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="203_iPhone-8-Copy-4" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd" transform="translate(-20.000000, -18.000000)">
+        <g id="btn-submit-small" transform="translate(35.000000, 33.000000) scale(-1, 1) translate(-35.000000, -33.000000) translate(20.000000, 18.000000)">
+            <g id="Group-8">
+                <circle id="Oval-10" fill="#6BAE95" cx="15" cy="15" r="15"></circle>
+                <g id="Group-3" transform="translate(8.780488, 8.048780)" stroke="#FFFFFF" stroke-linecap="round" stroke-width="2">
+                    <path d="M0,7.31707317 L11.7073171,7.31707317" id="Path-7"></path>
+                    <polyline id="Path-8" points="5.12195122 0 12.4390244 7.20445554 5.12195122 13.902439"></polyline>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

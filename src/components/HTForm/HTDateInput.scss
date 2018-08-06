@@ -1,0 +1,42 @@
+@import '../../styles/variables.scss';
+
+.dateInputContainer {
+  font-size: 15px;
+}
+
+@mixin placeholderStyle {
+  font-family: $ht-font !important;
+  font-weight: 300 !important;
+  font-size: 16px !important;
+  color: $ht-light-gray !important;
+}
+.dayPickerInput {
+  border-bottom: 1px solid #aaaaaa;
+  padding-bottom: 10px;
+  & > input {
+    flex: 1;
+    width: 100%;
+    font-weight: 300;
+    color: $ht-black;
+    font-size: 16px;
+    font-family: $ht-font;
+    &::placeholder {
+      @include placeholderStyle;
+    }
+    &::-ms-input-placeholder {
+      @include placeholderStyle;
+    }
+  }
+}
+
+.optional {
+  font-size: 12px;
+  color: $ht-light-gray;
+}
+
+.optionalAndError {
+  display: flex;
+  margin: {
+    top: 5px;
+  }
+}
